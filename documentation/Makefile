@@ -235,6 +235,11 @@ FIGURES = figures
 STYLESHEET = $(DOC)/*.css
 endif
 
+ifeq ($(LN),)
+DOC_EXT = .xml
+else
+DOC_EXT = .$(LN).xml
+endif
 
 ##
 # These URI should be rewritten by your distribution's xml catalog to
@@ -244,7 +249,7 @@ XSL_XHTML_URI = $(XSL_BASE_URI)/xhtml/docbook.xsl
 
 all: $(ALLPREQ)
 
-pdf:
+pdf: genln
 ifeq ($(DOC),yocto-project-qs)
 	@echo " "
 	@echo "ERROR: You cannot generate a yocto-project-qs PDF file."
@@ -257,16 +262,16 @@ else ifeq ($(DOC),mega-manual)
 
 else
 
-	cd $(DOC); ../tools/poky-docbook-to-pdf $(DOC).xml ../template; cd ..
+	cd $(DOC); ../tools/poky-docbook-to-pdf $(DOC)$(DOC_EXT) ../template; cd ..
 endif
     
-html:
+html: l10n
 ifeq ($(DOC),mega-manual)
 #       See http://www.sagehill.net/docbookxsl/HtmlOutput.html 
 	@echo " "
 	@echo "******** Building "$(DOC)
 	@echo " "
-	cd $(DOC); xsltproc $(XSLTOPTS) -o $(DOC).html $(DOC)-customization.xsl $(DOC).xml; cd ..
+	cd $(DOC); xsltproc $(XSLTOPTS) -o $(DOC).html $(DOC)-customization.xsl $(DOC)$(DOC_EXT); cd ..
 	@echo " "
 	@echo "******** Using mega-manual.sed to process external links"
 	@echo " "
@@ -280,7 +285,7 @@ else
 	@echo " "
 	@echo "******** Building "$(DOC)
 	@echo " "
-	cd $(DOC); xsltproc $(XSLTOPTS) -o $(DOC).html $(DOC)-customization.xsl $(DOC).xml; cd ..
+	cd $(DOC); xsltproc $(XSLTOPTS) -o $(DOC).html $(DOC)-customization.xsl $(DOC)$(DOC_EXT); cd ..
 endif
 
 
@@ -290,9 +295,17 @@ tarball: html
 	@echo " "
 	cd $(DOC); tar -cvzf $(DOC).tgz $(TARFILES); cd ..
 
-validate:
-	cd $(DOC); xmllint --postvalid --xinclude --noout $(DOC).xml; cd ..
+validate: l10n
+	cd $(DOC); xmllint --postvalid --xinclude --noout $(DOC)$(DOC_EXT); cd ..
 
+l10n:
+ifneq ($(LN),)
+	@echo " "
+	@echo "******** Generating localized xml file"
+	@echo " "
+	cd $(DOC); po4a-translate -f docbook -m $(DOC).xml -M UTF-8 -p po/$(LN).po -k 0 -l $(DOC)$(DOC_EXT)
+
+endif
 
 publish:
 	@if test -f $(DOC)/$(DOC).html; \
