@@ -304,8 +304,14 @@ ifneq ($(LN),)
 	@echo "******** Generating localized xml file"
 	@echo " "
 	cd $(DOC); po4a-translate -f docbook -m $(DOC).xml -M UTF-8 -p po/$(LN).po -k 0 -l $(DOC)$(DOC_EXT)
-
 endif
+
+updatepo:
+	@echo " "
+	@echo "******** Updating po file"
+	@echo " "
+	cd $(DOC); for i in `ls po/*.po`; \
+	  do echo $$i; po4a-updatepo -f docbook -m $(DOC).xml -M UTF-8 -p $$i; done;
 
 publish:
 	@if test -f $(DOC)/$(DOC).html; \
