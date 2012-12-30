@@ -13,6 +13,7 @@
 #    html:     generates an HTML version of a manual.
 #    tarball:  creates a tarball for the doc files.
 #    validate: validates 
+#    updatepo: update po files for all languages.
 #    publish:  pushes generated files to the Yocto Project website
 #    clean:    removes files
 #
@@ -28,6 +29,10 @@
 # edison or denzil, you must use BRANCH. You do not need to use BRANCH for
 # any release beyond denzil.  
 #
+# The variable LN indicates language code for a given manual.  If you usei LN,
+# before to xml pdf and/or html or to verify xml, l10n target will generate
+# localized xml file with po/$(LN).po, and result pdf/html are localized.
+#
 # To build a manual, you must invoke Makefile with the DOC argument.  If you 
 # are going to publish the manual, then you must invoke Makefile with both the 
 # DOC and the VER argument.  Furthermore, if you are building or publishing
@@ -41,16 +46,18 @@
 #     make pdf DOC=poky-ref-manual
 #     make DOC=dev-manual BRANCH=edison
 #     make DOC=mega-manual BRANCH=denzil
+#     make LN=ja DOC=yocto-project-qs
 #
 # The first example generates the HTML and PDF versions of the BSP Guide.
 # The second example generates the HTML version only of the Quick Start.  Note that 
 # the Quick Start only has an HTML version available.  The third example generates 
 # both the PDF and HTML versions of the Yocto Project Reference Manual. The 
 # fourth example generates both the PDF and HTML 'edison' versions of the YP 
-# Development Manual.  The last exmample generates the HTML version of the 
+# Development Manual.  The fifth example generates the HTML version of the
 # mega-manual and uses the 'denzil' branch when choosing figures for the 
-# tarball of figures.  Any example that does not use the BRANCH argument 
-# builds the current version of the manual set.
+# tarball of figures.  The last example generates generates localized Quick Start
+# for Japanese(ja).  Any example that does not use the BRANCH argument builds
+# the current version of the manual set.
 #
 # Use the publish target to push the generated manuals to the Yocto Project 
 # website.  All files needed for the manual's HTML form are pushed as well as the 
