@@ -13,7 +13,7 @@
 #    html:     generates an HTML version of a manual.
 #    tarball:  creates a tarball for the doc files.
 #    validate: validates 
-#    updatepo: update po files for all languages.
+#    updatepo: update pot/po files for all languages.
 #    publish:  pushes generated files to the Yocto Project website
 #    clean:    removes files
 #
@@ -315,10 +315,14 @@ endif
 
 updatepo:
 	@echo " "
-	@echo "******** Updating po file"
+	@echo "******** Updating pot/po file"
 	@echo " "
-	cd $(DOC); for i in `ls po/*.po`; \
-	  do echo $$i; po4a-updatepo -f docbook -m $(DOC).xml -M UTF-8 -p $$i; done;
+	@if test -d $(DOC)/po; \
+	  then \
+            cd $(DOC); po4a-gettextize -f docbook -m $(DOC).xml -M UTF-8 -p po/$(DOC).pot; \
+            for i in `ls po/*.po`; \
+              do echo $$i; po4a-updatepo -f docbook -m $(DOC).xml -M UTF-8 -p $$i; done; \
+	fi
 
 publish:
 	@if test -f $(DOC)/$(DOC).html; \
