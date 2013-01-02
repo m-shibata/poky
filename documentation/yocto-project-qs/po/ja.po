@@ -19,7 +19,7 @@ msgstr ""
 #. type: Attribute 'fileref' of: <article><imagedata>
 #: yocto-project-qs.xml:6
 msgid "figures/yocto-project-transp.png"
-msgstr ""
+msgstr "figures/yocto-project-transp.png"
 
 #. type: Content of: <article><section><title>
 #: yocto-project-qs.xml:9
@@ -61,6 +61,12 @@ msgid ""
 "system.  See the <ulink url='http://www.yoctoproject.org/documentation/build-"
 "appliance'>Yocto Project Build Appliance</ulink> for more information."
 msgstr ""
+"Linuxが動作するシステムを持っていないが、Yocto Projectをテスト実行したい場合は、"
+"Yocto Project Build Applianceの使用を検討すると良いでしょう。Build Applianceを"
+"使えば、Linux以外の開発環境を使ってYocto Projectのカスタム組み込みLinux"
+"イメージを作成、起動できます。詳しいことは"
+"<ulink url='http://www.yoctoproject.org/documentation/build-appliance'>Yocto "
+"Project Build Appliance</ulink>を参照してください。"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:34
@@ -71,6 +77,10 @@ msgid ""
 "Linux system, skip right to the \"<link linkend='super-user'>Super User</"
 "link>\" section at the end of this quick start."
 msgstr ""
+"その一方で、オープンソースの開発、Linuxの開発環境、Gitソースリポジトリなど"
+"について熟知しており、Linuxシステム上でYocto Projectを試すための簡単な情報が"
+"欲しいなら、クイックスタートの最後にある\"<link linkend='super-user'>熟練"
+"ユーザー向け</link>\"セクションまで読み飛ばしてください。"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:41
@@ -82,6 +92,12 @@ msgid ""
 "document steps you through a simple example showing you how to build a small "
 "image and run it using the Quick EMUlator (QEMU emulator)."
 msgstr ""
+"残りの人については、この短い文書を読めば、環境についての基本的な情報を入手し、"
+"もっともシンプルな形での経験を得られるでしょう。この文書を読んだあとには、"
+"Yocto Projectに関する簡単な理解と、コアコンポーネントの使い方を習得している"
+"ことでしょう。ここでは簡単な例を用いて、小さなイメージの構築方法と、"
+"Quick EMUlator（QEMUエミュレーター）を使ったイメージの実行方法を手順を追って"
+"紹介します。"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:50
@@ -89,6 +105,7 @@ msgid ""
 "For more detailed information on the Yocto Project, you should check out "
 "these resources:"
 msgstr ""
+"Yocto Projectについてより詳しい情報は、次のリソースを参照してください："
 
 #. type: Content of: <article><section><para><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:52
@@ -98,6 +115,9 @@ msgid ""
 "development documentation, and a rich Yocto Project Development Community "
 "into which you can tap."
 msgstr ""
+"<emphasis>ウェブサイト：</emphasis><ulink url='&YOCTO_HOME_URL;'>Yocto "
+"Projectのウェブサイト</ulink>では、最新のビルド、情報、完全な開発文書、"
+"誰でも参加できる豊富なYocto Projectの開発コミュニティを提供しています。"
 
 #. type: Content of: <article><section><para><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:56
@@ -108,6 +128,10 @@ msgid ""
 "url='&YOCTO_DOCS_REF_URL;#faq'>FAQ</ulink>\" chapter in the Yocto Project "
 "Reference Manual."
 msgstr ""
+"<emphasis>FAQ：</emphasis>Yocto Projectで一般的な質問と回答の一覧です。"
+"二つのFAQが存在します：Wiki上の<ulink url='&YOCTO_WIKI_URL;/wiki/"
+"FAQ'>Yocto Project FAQ</ulink>と、Yocto Projectのリファレンスマニュアルの"
+"\"<ulink url='&YOCTO_DOCS_REF_URL;#faq'>FAQ</ulink>\"チャプター。"
 
 #. type: Content of: <article><section><para><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:62
@@ -117,21 +141,25 @@ msgid ""
 "Screencast Tutorial</ulink> provides a 30-minute video for the user new to "
 "the Yocto Project but familiar with Linux build systems."
 msgstr ""
+"<emphasis>開発者によるスクリーンキャスト：</emphasis><ulink url='http://vimeo."
+"com/36450321'>Getting Started with the Yocto Project - New Developer "
+"Screencast Tutorial</ulink>では、Linuxの開発システムについては知っているものの"
+"Yocto Projectでは新規ユーザー向けに30分のビデオを提供しています。"
 
 #. type: Content of: <article><section><note><ulink>
 #: yocto-project-qs.xml:71
 msgid "Yocto Project Quick Start"
-msgstr ""
+msgstr "Yocto Projectクイックスタート"
 
 #. type: Content of: <article><section><note><ulink>
 #: yocto-project-qs.xml:72
 msgid "Yocto Project"
-msgstr ""
+msgstr "Yocto Project"
 
 #. type: Content of: <article><section><title>
 #: yocto-project-qs.xml:78
 msgid "Introducing the Yocto Project Development Environment"
-msgstr ""
+msgstr "Yocto Projectの開発環境を導入する"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:80
@@ -144,6 +172,13 @@ msgid ""
 "the X Window System, GNOME Mobile-based application frameworks, and Qt "
 "frameworks."
 msgstr ""
+"Yocto Projectは、OpenEmbeddedの開発システムを経由して、x86-64やその"
+"エミュレーション環境を含む数多くのプラットフォーム向けに、ARM、MIPS、"
+"PowerPCやx86アーキテクチャをターゲットにした、オープンソースの"
+"開発環境を提供します。Yocto Projectのコンポーネントを使うことで、Linuxで"
+"使われているX Window SystemやGNOMEのモバイルベースのアプリケーション"
+"フレームワーク、Qtフレームワークなどのすべてのソフトウェアスタックを、"
+"デザイン、開発、ビルド、デバッグ、シミュレート、テストできます。"
 
 #. type: Content of: <article><section><mediaobject>
 #: yocto-project-qs.xml:89
@@ -151,16 +186,18 @@ msgid ""
 "<imageobject> <imagedata fileref=\"figures/yocto-environment.png\" format="
 "\"PNG\" align='center' scalefit='1' width=\"100%\"/> </imageobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/yocto-environment.png\" format="
+"\"PNG\" align='center' scalefit='1' width=\"100%\"/> </imageobject>"
 
 #. type: Content of: <article><section><mediaobject><caption><para>
 #: yocto-project-qs.xml:94
 msgid "The Yocto Project Development Environment"
-msgstr ""
+msgstr "Yocto Projectの開発環境"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:99
 msgid "Here are some highlights for the Yocto Project:"
-msgstr ""
+msgstr "Yocto Projectの特徴は次のとおりです："
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:104
@@ -168,6 +205,8 @@ msgid ""
 "Provides a recent Linux kernel along with a set of system commands and "
 "libraries suitable for the embedded environment."
 msgstr ""
+"組み込み環境に適切なシステムコマンドとライブラリーと共に、最新の"
+"Linuxカーネルを提供します。"
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:107
@@ -177,6 +216,11 @@ msgid ""
 "display hardware.  For devices that don't have a display or where you wish "
 "to use alternative UI frameworks, these components need not be installed."
 msgstr ""
+"（とりわけ）X11やGTK+、Qt、Clutter、SDLのようなシステムコンポーネントを"
+"構築し、ディスプレイハードウェアを持っているデバイス上でリッチなユーザー"
+"エクスペリエンスを作成できます。ディスプレイを持っていないハードウェアや"
+"別のUIフレームワークを使いたいなら、これらのコンポーネントをインストール"
+"する必要はありません。"
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:114
@@ -184,6 +228,8 @@ msgid ""
 "Creates a focused and stable core compatible with the OpenEmbedded project "
 "with which you can easily and reliably build and develop."
 msgstr ""
+"OpenEmbeddedプロジェクトとの互換性に集中し、安定したコアを作成するので、"
+"簡単かつ確実に構築と開発を行えます。"
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:118
@@ -191,6 +237,8 @@ msgid ""
 "Fully supports a wide range of hardware and device emulation through the "
 "QEMU Emulator."
 msgstr ""
+"QEMUエミュレーターを用いて、さまざまなハードウェアやデバイスエミュレーションを"
+"完全にサポートしています。"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:124
@@ -203,6 +251,13 @@ msgid ""
 "QEMU emulator, the development environment works nicely as a test platform "
 "for developing embedded software."
 msgstr ""
+"Yocto Projectは数多くのデバイス向けにイメージを生成できます。しかしながら、"
+"標準的なマシーンとして、<trademark class='registered'>Intel</trademark>"
+"デスクトップボードDH55TCと同じように、x86、x86-64、ARM、MIPS、PPCベースの"
+"アーキテクチャのQEMUフルシステムエミュレーションをターゲットにしています。"
+"Yocto Projectで開発したイメージはQEMUエミュレーターの中で起動できるので、"
+"開発環境は開発中の組み込みソフトウェアのテストプラットフォームとしても"
+"うまく動作します。"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:133
@@ -215,16 +270,23 @@ msgid ""
 "implement their own user interface on top of a Linux image created with the "
 "Yocto Project."
 msgstr ""
+"Yocto Projectのもう一つの重要な機能は、Satoリファレンスユーザー"
+"インターフェースです。この選択可能なGNOMEモバイルベースのUIは、"
+"スクリーンサイズに制約のあるデバイス向けであり、GNOMEモバイルスタックを使って"
+"デバイス上に、よく考慮されたユーザーエクスペリエンスを提供します。"
+"独自のレイヤーとして実装されているので、Yocto Projectを用いて"
+"Linuxイメージ上に独自のユーザーインターフェースを実装する方法を"
+"開発者に明示してくれることでしょう。"
 
 #. type: Content of: <article><section><title>
 #: yocto-project-qs.xml:143
 msgid "What You Need and How You Get It"
-msgstr ""
+msgstr "必要なものとその入手方法"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:146
 msgid "You need these things to develop in the Yocto Project environment:"
-msgstr ""
+msgstr "Yocto Project環境で開発を行うためには次のものが必要です："
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:151
@@ -234,21 +296,25 @@ msgid ""
 "multiple cores and threads, you can configure the Yocto Project build system "
 "to decrease the time needed to build images significantly."
 msgstr ""
+"サポートされたLinuxディストリビューション（つまりFedoraやopenSUSE、CentOS、"
+"Ubuntuの最近のリリース）が動作しているホストシステム。ホストシステムが"
+"マルチコアやスレッドをサポートしているなら、イメージの構築に必要な時間を"
+"劇的に削減するために、Yocto Projectのビルドシステムを設定できます。"
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:159
 msgid "The right packages."
-msgstr ""
+msgstr "正しいパッケージ。"
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:162
 msgid "A release of the Yocto Project."
-msgstr ""
+msgstr "Yocto Projectのリリース"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:167
 msgid "The Linux Distribution"
-msgstr ""
+msgstr "Linuxディストリビューション"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:170
@@ -257,26 +323,29 @@ msgid ""
 "distributions with each release.  In general, if you have the current "
 "release minus one of the following distributions you should have no problems."
 msgstr ""
+"Yocto Projectチームは継続的にリリースごとにより多くのLinuxディストリビューション"
+"で検証しています。一般的に、次のディストリビューションの最新かそれより"
+"一つ前のリリースであれば、問題は起きないでしょう。"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:175 yocto-project-qs.xml:244
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:176 yocto-project-qs.xml:256
 msgid "Fedora"
-msgstr ""
+msgstr "Fedora"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:177 yocto-project-qs.xml:268
 msgid "openSUSE"
-msgstr ""
+msgstr "openSUSE"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:178 yocto-project-qs.xml:280
 msgid "CentOS"
-msgstr ""
+msgstr "CentOS"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:180
@@ -288,6 +357,12 @@ msgid ""
 "a RHEL 4-based host, see the <ulink url='&YOCTO_WIKI_URL;/wiki/"
 "BuildingOnRHEL4'>BuildingOnRHEL4</ulink> wiki page.  </note>"
 msgstr ""
+"Yocto Projectをサポートするディストリビューションの詳細については、"
+"Yocto Projectリファレンスマニュアルの\"<ulink url='&YOCTO_DOCS_REF_URL;"
+"#detailed-supported-distros'>サポートするLinuxディストリビューション</ulink>\""
+"セクションを参照してください。<note>RHEL 4ベースのホスト上でYocto Projectを"
+"使う場合の注意点は、<ulink url='&YOCTO_WIKI_URL;/wiki/"
+"BuildingOnRHEL4'>BuildingOnRHEL4</ulink>のwikiページを参照してください。</note>"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:191
@@ -298,6 +373,11 @@ msgid ""
 "document assumes you are running one of the previously noted distributions "
 "on your Linux-based host systems."
 msgstr ""
+"OpenEmbeddedビルドシステムはPython 2.6や2.7が動作する最近のディストリビューション"
+"上であれば動作可能です。より以前のリリースのPythonだと動作しないことが知られて"
+"います。また、現時点ではPython 3をサポートしていません。この文書では、"
+"Linuxベースのホストシステム上に前掲のディストリビューションのいずれかが動作"
+"していることを仮定しています。"
 
 #. type: Content of: <article><section><section><note><para>
 #: yocto-project-qs.xml:197
@@ -313,11 +393,20 @@ msgid ""
 "Project Bugzilla</ulink> and submit a bug.  We are interested in hearing "
 "about your experience."
 msgstr ""
+"上記以外のディストリビューションを試す場合は成功するかどうかわかりません。"
+"テストされていない環境で挑戦することになります。"
+"<ulink url='&OE_HOME_URL;/index.php?title=OEandYourDistro'>OE and Your "
+"Distro</ulink>と<ulink url='&OE_HOME_URL;/index.php?"
+"title=Required_software'>Required Software</ulink>には、openEmbeddedプロジェクト"
+"を使う他のディストリビューションの情報が掲載されているので、調査のとっかかりに"
+"なるでしょう。この方法を使うなら、問題に遭遇する可能性があります。"
+"問題に遭遇したら、<ulink url='&YOCTO_BUGZILLA_URL;'>Yocto Project Bugzilla</ulink>"
+"に不具合報告してください。私たちは遭遇した問題を聴きたいと考えています。"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:212
 msgid "The Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:215
@@ -333,6 +422,15 @@ msgid ""
 "section may or may not work depending on whether or not your Linux "
 "distribution has <filename>sudo</filename> installed.</note>"
 msgstr ""
+"パッケージとそのインストール方法は開発システムや目的に強く依存します。"
+"例えば、グラフィカルモードのQEMU上で実行可能なイメージ（最小もしくは基本ビルドが"
+"必要です）を構築したいときと、ヘッドレスシステム上のイメージやYocto Projectの"
+"文書群を構築したいときとでは、数多くのパッケージが異なります。すべてのケースを"
+"カバーできる必要パッケージの総数は、とても多くなります。<note>一般的に、"
+"管理者権限を得てから必要なパッケージをインストールする必要があります。"
+"それ故に、以降のセクションで使用しているコマンドは、Linuxディストリビューションに"
+"<filename>sudo</filename>コマンドがインストールされているかどうかに依存して"
+"動作するかどうか変わります。</note>"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:232
@@ -341,6 +439,9 @@ msgid ""
 "packages needed to build an image that runs on QEMU in graphical mode (e.g. "
 "essential plus graphics support)."
 msgstr ""
+"次のセクションでは、サポートされているLinuxディストリビューションごとに"
+"イメージを構築しグラフィックモードのQEMUで実行する（つまりグラフィックサポート"
+"も追加する）ために必要なパッケージをリストアップしています。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:238
@@ -350,6 +451,9 @@ msgid ""
 "system'>Required Packages for the Host Development System</ulink>\" section "
 "in the Yocto Project Reference Manual."
 msgstr ""
+"他のシナリオで必要なパッケージのリストについては、Yocto Projectリファレンス"
+"マニュアルの\"<ulink url='&YOCTO_DOCS_REF_URL;#required-packages-for-the-host-development-"
+"system'>ホスト開発システムで必要なパッケージ</ulink>\"セクションを参照してください。"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:250
@@ -358,6 +462,8 @@ msgid ""
 "     $ sudo apt-get install &UBUNTU_HOST_PACKAGES_ESSENTIAL; libsdl1.2-dev xterm\n"
 "                "
 msgstr ""
+"     $ sudo apt-get install &UBUNTU_HOST_PACKAGES_ESSENTIAL; libsdl1.2-dev xterm\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:247
@@ -366,6 +472,8 @@ msgid ""
 "shown in the following command: <placeholder type=\"literallayout\" id=\"0\"/"
 ">"
 msgstr ""
+"Ubuntuディストリビューションで必要なパッケージは次のコマンドを参照してください："
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:262
@@ -374,6 +482,8 @@ msgid ""
 "     $ sudo yum install &FEDORA_HOST_PACKAGES_ESSENTIAL; SDL-devel xterm\n"
 "                "
 msgstr ""
+"     $ sudo yum install &FEDORA_HOST_PACKAGES_ESSENTIAL; SDL-devel xterm\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:259
@@ -382,6 +492,8 @@ msgid ""
 "shown in the following command: <placeholder type=\"literallayout\" id=\"0\"/"
 ">"
 msgstr ""
+"Fedoraディストリビューションで必要なパッケージは次のコマンドを参照してください："
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:274
@@ -390,6 +502,8 @@ msgid ""
 "     $ sudo zypper install &OPENSUSE_HOST_PACKAGES_ESSENTIAL; libSDL-devel xterm\n"
 "                "
 msgstr ""
+"     $ sudo zypper install &OPENSUSE_HOST_PACKAGES_ESSENTIAL; libSDL-devel xterm\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:271
@@ -398,6 +512,8 @@ msgid ""
 "shown in the following command: <placeholder type=\"literallayout\" id=\"0\"/"
 ">"
 msgstr ""
+"openSUSEディストリビューションで必要なパッケージは次のコマンドを参照してください："
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:286
@@ -406,6 +522,8 @@ msgid ""
 "     $ sudo yum -y install &CENTOS_HOST_PACKAGES_ESSENTIAL; SDL-devel xterm\n"
 "                "
 msgstr ""
+"     $ sudo yum -y install &CENTOS_HOST_PACKAGES_ESSENTIAL; SDL-devel xterm\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:283
@@ -418,11 +536,17 @@ msgid ""
 "GettingStarted/Dependencies'>Poky/GettingStarted/Dependencies</ulink> wiki "
 "page.</note>"
 msgstr ""
+"openSUSEディストリビューションで必要なパッケージは次のコマンドを参照してください："
+"<placeholder type=\"literallayout\" id=\"0\"/> <note>使用するCentOSのバージョン"
+"によっては、他にも必要なパッケージがあるかもしれません。詳しいことは"
+"<ulink url='https://wiki.yoctoproject.org/wiki/Poky/"
+"GettingStarted/Dependencies'>Poky/GettingStarted/Dependencies</ulink> wiki"
+"ページのCentOSセクションを参照してください。</note>"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:298
 msgid "Yocto Project Release"
-msgstr ""
+msgstr "Yocto Projectリリース"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:301
@@ -436,6 +560,14 @@ msgid ""
 "maintained at <ulink url=\"&YOCTO_AB_NIGHTLY_URL;\"></ulink>.  However, for "
 "this document a released version of Yocto Project is used."
 msgstr ""
+"Yocto Projectの最新リリースは、<ulink url=\"&YOCTO_HOME_URL;/download\">"
+"Yocto Project Downloadページ</ulink>からダウンロードできます。このページ"
+"を訪れて、\"Donload\"ナビゲーションペインにある\"Yocto Downloads\"リンクを"
+"クリックすると、右側にすべての利用可能なYocto Projectリリースが表示されます。"
+"その後、一覧から欲しいリリースの\"Yocto Release\"リンクをクリックすると、"
+"ダウンロードが始まります。Nightlyと開発ビルドは"
+"<ulink url=\"&YOCTO_AB_NIGHTLY_URL;\"></ulink>で管理されています。"
+"しかしながら、この文書ではYocto Projectのリリース版を使用しています。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:313
@@ -447,11 +579,16 @@ msgid ""
 "method, see the \"<ulink url='&YOCTO_DOCS_DEV_URL;#local-yp-release'>Yocto "
 "Project Release</ulink>\" item in the Yocto Project Development Manual."
 msgstr ""
+"Yocto Projectのファイルは、ホスト開発システム上に<filename>poky</filename>の"
+"Gitリポジトリのローカルコピーを設定する（Gitの用語ではcloneする）ことでも"
+"入手できます。そうすれば、Yocto Projectへ貢献することも可能です。この方法に"
+"ついての詳しいことは、Yocto Project開発マニュアルの\"<ulink url='&YOCTO_DOCS_"
+"DEV_URL;#local-yp-release'>Yocto Projectリリース</ulink>\"を参照してください。"
 
 #. type: Content of: <article><section><title>
 #: yocto-project-qs.xml:325
 msgid "A Quick Test Run"
-msgstr ""
+msgstr "まずはテスト実行"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:328
@@ -460,21 +597,23 @@ msgid ""
 "Project a try.  This section presents some steps that let you do the "
 "following:"
 msgstr ""
+"この時点で、システムに必要なものが一通り揃いましたので、Yocto Projectを試す"
+"ことができます。このセクションでは、次の内容行う手順を説明します："
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:334
 msgid "Build an image and run it in the QEMU emulator"
-msgstr ""
+msgstr "イメージの構築とQEMUエミュレーター上での実行"
 
 #. type: Content of: <article><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:337
 msgid "Use a pre-built image and run it in the QEMU emulator"
-msgstr ""
+msgstr "構築済みイメージを使ってQEMUエミュレーター上で実行する方法"
 
 #. type: Content of: <article><section><section><mediaobject><caption><para>
 #: yocto-project-qs.xml:342 yocto-project-qs.xml:354
 msgid "Building an Image"
-msgstr ""
+msgstr "イメージの構築"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:345
@@ -483,6 +622,9 @@ msgid ""
 "change hardware support, add or change system libraries, or add or change "
 "services that have dependencies."
 msgstr ""
+"開発環境において、ハードウェアのサポートを変更したときやシステムライブラリーを"
+"追加・変更したとき、依存関係を持ったサービスを追加・変更したときはいつでも、"
+"イメージを構築する必要があるでしょう。"
 
 #. type: Content of: <article><section><section><mediaobject>
 #: yocto-project-qs.xml:350
@@ -490,6 +632,8 @@ msgid ""
 "<imageobject> <imagedata fileref=\"figures/building-an-image.png\" format="
 "\"PNG\" align='center' scalefit='1'/> </imageobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/building-an-image.png\" format="
+"\"PNG\" align='center' scalefit='1'/> </imageobject>"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:359
@@ -498,6 +642,9 @@ msgid ""
 "process creates an entire Linux distribution, including the toolchain, from "
 "source."
 msgstr ""
+"イメージを構築するには次のコマンドを使用します。OpenEmbeddedのビルドプロセス"
+"では、ツールチェインを含むLinuxディストリビューション全体をソースから作成"
+"します。"
 
 #. type: Content of: <article><section><section><note><para>
 #: yocto-project-qs.xml:365
@@ -506,6 +653,9 @@ msgid ""
 "To allow for variations in the build process and for future package "
 "expansion, we recommend having at least 100GB of free disk space."
 msgstr ""
+"Satoを使ったビルドプロセスでは、現在は約50GBほどのディスク容量を消費します。"
+"いろいろなビルドプロセスを実行したり、将来的にパッケージを追加できるように、"
+"ディスクに少なくとも100GBの空き容量を推奨します。"
 
 #. type: Content of: <article><section><section><note><para>
 #: yocto-project-qs.xml:371
@@ -518,6 +668,13 @@ msgid ""
 "build system obtain source code and will it work behind my firewall or proxy "
 "server?</ulink>\" in the Yocto Project Reference Manual."
 msgstr ""
+"通常、ビルドプロセスではあらかじめ決められた順番で、ソースコードの"
+"場所を検索します。ソースコードの検索やダウンロードの過程で問題が発生した"
+"場合は、Yocto Projectリファレンスマニュアルの\"<ulink url='&YOCTO_DOCS_REF_"
+"URL;#how-does-the-yocto-project-obtain-source-code-and-will-it-work-behind-"
+"my-firewall-or-proxy-server'>OpenEmbedded構築システムがソースコードを取得する"
+"方法とファイヤーウォールやプロキシーを経由する方法</ulink>\"を参照して"
+"ください。"
 
 #. type: Content of: <article><section><section><para><literallayout>
 #: yocto-project-qs.xml:380
@@ -529,11 +686,16 @@ msgid ""
 "     $ source &OE_INIT_FILE;\n"
 "             "
 msgstr ""
+"     $ wget &YOCTO_POKY_DL_URL;\n"
+"     $ tar xjf &YOCTO_POKY;.tar.bz2\n"
+"     $ cd &YOCTO_POKY;\n"
+"     $ source &OE_INIT_FILE;\n"
+"             "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:379 yocto-project-qs.xml:582
 msgid "<placeholder type=\"literallayout\" id=\"0\"/>"
-msgstr ""
+msgstr "<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><tip><para><literallayout>
 #: yocto-project-qs.xml:394
@@ -542,6 +704,8 @@ msgid ""
 "     INHERIT += \"rm_work\"\n"
 "             "
 msgstr ""
+"     INHERIT += \"rm_work\"\n"
+"             "
 
 #. type: Content of: <article><section><section><tip><para>
 #: yocto-project-qs.xml:388
@@ -552,6 +716,11 @@ msgid ""
 "statement deletes the work directory used for building a package once the "
 "package is built.  <placeholder type=\"literallayout\" id=\"0\"/>"
 msgstr ""
+"プロジェクトの設定ファイル、この例だと<filename>&YOCTO_POKY;-build/conf/"
+"local.conf</filename>、に次の設定を追加すると、構築中のディスク容量を節約"
+"できます。この設定を追加すると、パッケージの構築が一度完了したら、その"
+"パッケージを構築するのに使った作業ディレクトリを削除します。"
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:399
@@ -562,6 +731,10 @@ msgid ""
 "url='&YOCTO_HOME_URL;/download'>Yocto Project website's Downloads page</"
 "ulink> to retrieve the tarball."
 msgstr ""
+"前の例において、最初のコマンドはYocto Projectのリリースtarボールを、"
+"<filename>wget</filename>コマンドを使ってソースリポジトリから取得しています。"
+"その代わりに、<ulink url='&YOCTO_HOME_URL;/download'>Yocto Projectのウェブサイト"
+"のDownloadsページ</ulink>からtarボールをダウンロードする方法も使えます。"
 
 #. type: Content of: <article><section><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:405
@@ -569,6 +742,8 @@ msgid ""
 "The second command extracts the files from the tarball and places them into "
 "a directory named <filename>&YOCTO_POKY;</filename> in the current directory."
 msgstr ""
+"二つめのコマンドでは、カレントディレクトリの<filename>&YOCTO_POKY;</filename>"
+"ディレクトリの中にtarボールの内容を展開しています。"
 
 #. type: Content of: <article><section><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:408
@@ -585,6 +760,17 @@ msgid ""
 "the build completes, the Build Directory contains all the files created "
 "during the build."
 msgstr ""
+"三つめと四つめのコマンドは、作業ディレクトリを<ulink url='&YOCTO_DOCS_DEV_"
+"URL;#source-directory'>ソースディレクトリ</ulink>に変更した上で、"
+"Yocto Projectの<ulink url='&YOCTO_DOCS_REF_URL;#structure-core-script'>"
+"環境設定スクリプト</ulink>を実行しています。このスクリプトを実行することで、"
+"構築を完了させるために必要なOpenEmbedded構築環境の設定集が定義されます。"
+"このスクリプトは<ulink url='&YOCTO_DOCS_DEV_URL;#build-directory'>構築"
+"ディレクトリ</ulink>も作成します。今回の場合は、ソースディレクトリの"
+"中に<filename>build</filename>という名前になります。スクリプト実行後は、"
+"作業ディレクトリは構築ディレクトリに変更されます。この後、構築を完了"
+"させると、構築中に作成したすべてのファイルが構築ディレクトリに保存"
+"されることになります。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:425
@@ -594,6 +780,10 @@ msgid ""
 "The defaults in that file should work fine.  However, there are some "
 "variables of interest at which you might look."
 msgstr ""
+"構築ディレクトリの中のプロジェクトの設定ディレクトリにある<filename>local."
+"conf</filename>を調べてみましょう。このファイルは初期状態のままでもうまく"
+"動作します。しかしながら、いくつかの設定値については興味をおぼえる価値が"
+"あるでしょう。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:432
@@ -605,6 +795,11 @@ msgid ""
 "<filename>MACHINE</filename> variable in the configuration file before "
 "launching the build."
 msgstr ""
+"初期設定だと、<filename>qemux86</filename>をターゲットアーキテクチャと"
+"して構築するために、生成されるイメージは<trademark class='registered'>Intel"
+"</trademark>の32ビットベースのアーキテクチャをターゲットとし、QEMUエミュ"
+"レーターで使用できます。この設定を変更するには、構築を開始する前に設定ファイルの"
+"<filename>MACHINE</filename>変数を変更してください。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:440
@@ -619,6 +814,13 @@ msgid ""
 "processor cores.  Setting these variables can significantly shorten your "
 "build time."
 msgstr ""
+"もう一つの気になる設定値は、<ulink url='&YOCTO_DOCS_REF_URL;#var-"
+"BB_NUMBER_THREADS'><filename>BB_NUMBER_THREADS</filename></ulink>と"
+"<ulink url='&YOCTO_DOCS_REF_URL;#var-PARALLEL_MAKE'><filename>PARALLEL_MAKE</"
+"filename></ulink>変数でしょう。初期設定では、これらの変数はコメントアウトされて"
+"います。しかしながら、マルチコアCPUを持っているのであれば、この行を有効にして"
+"ホストプロセッサーのコアの数の二倍を両方の変数に設定すると良いでしょう。"
+"これらの変数は構築時間を大幅に削減してくれます。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:451
@@ -633,6 +835,15 @@ msgid ""
 "<filename>package*.bbclass</filename></ulink>\" in the Yocto Project "
 "Reference Manual."
 msgstr ""
+"構築を開始する前に考慮すべきもう一つの設定は、作成されたイメージで使う"
+"パッケージ管理システムの選定です。OpenEmbedded構築システムの初期設定では"
+"RPMパッケージ管理システムを使用します。この設定は"
+"<filename><ulink url='&YOCTO_DOCS_REF_URL;#var-"
+"PACKAGE_CLASSES'><filename>PACKAGE_CLASSES</filename></ulink></filename>"
+"変数で変更できます。パッケージ管理システムの選定については、Yocto Project"
+"リファレンスマニュアルの\"<ulink url='&YOCTO_DOCS_REF_URL;#ref-classes-"
+"package'>パッケージング - <filename>package*.bbclass</filename></ulink>\""
+"も参照してください。"
 
 #. type: Content of: <article><section><section><para><literallayout>
 #: yocto-project-qs.xml:469
@@ -641,6 +852,8 @@ msgid ""
 "     $ bitbake -k core-image-sato\n"
 "             "
 msgstr ""
+"     $ bitbake -k core-image-sato\n"
+"             "
 
 #. type: Content of: <article><section><section><para><note>
 #: yocto-project-qs.xml:462
@@ -653,6 +866,13 @@ msgid ""
 "Project Reference Manual.  <placeholder type=\"literallayout\" id=\"0\"/> "
 "<note>"
 msgstr ""
+"続いて次のコマンドを実行すると、今回の例だと<filename>core-image-sato</filename>"
+"をターゲットにしたOSのイメージを構築します。<filename>-k</filename>オプションに"
+"ついては、<filename>bitbake --help</filename>コマンドやYocto Projectリファレンス"
+"マニュアルの\"<ulink url='&YOCTO_DOCS_REF_URL;#usingpoky-components-bitbake'>"
+"BitBake</ulink>\"セクションを参照してください。"
+"<placeholder type=\"literallayout\" id=\"0\"/> "
+"<note>"
 
 #. type: Content of: <article><section><section><para><note><para>
 #: yocto-project-qs.xml:472
@@ -661,6 +881,9 @@ msgid ""
 "requirement, see the <ulink url='&YOCTO_DOCS_REF_URL;#faq'>FAQ</ulink> in "
 "the Yocto Project Reference Manual."
 msgstr ""
+"BitBakeはPython 2.6、2.7以上を要求します。この必要環境については"
+"Yocto Projectリファレンスマニュアルの<ulink url='&YOCTO_DOCS_REF_URL;#faq'>FAQ"
+"</ulink>を参照してください。"
 
 #. type: Content of: <article><section><section><para><literallayout>
 #: yocto-project-qs.xml:479
@@ -669,6 +892,8 @@ msgid ""
 "     $ runqemu qemux86\n"
 "             "
 msgstr ""
+"     $ runqemu qemux86\n"
+"             "
 
 #. type: Content of: <article><section><section><para><note>
 #: yocto-project-qs.xml:476
@@ -676,6 +901,8 @@ msgid ""
 "</note> The final command runs the image: <placeholder type=\"literallayout"
 "\" id=\"0\"/> <note>"
 msgstr ""
+"</note>最後のコマンドでイメージを実行します：<placeholder type=\"literallayout"
+"\" id=\"0\"/> <note>"
 
 #. type: Content of: <article><section><section><para><note><para>
 #: yocto-project-qs.xml:482
@@ -685,16 +912,19 @@ msgid ""
 "take several hours the first time you run it.  Subsequent builds run much "
 "faster since parts of the build are cached."
 msgstr ""
+"プロセッサーやコアの数、RAMの量、インターネットの接続速度や他の要因によって、"
+"最初に実行した構築プロセスは数時間かかる可能性があります。二回め以降の構築は"
+"キャッシュデータを使用するためにより短くなります。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:486
 msgid "</note>"
-msgstr ""
+msgstr "</note>"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:491
 msgid "Using Pre-Built Binaries and QEMU"
-msgstr ""
+msgstr "構築済みバイナリーとQEMUの使用"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:494
@@ -704,6 +934,10 @@ msgid ""
 "using the QEMU emulator.  This scenario is useful for developing application "
 "software."
 msgstr ""
+"ハードウェアやライブラリー、サービスが安定しているなら、ファイルシステムイメージ"
+"やカーネル、ツールチェインの構築済みバイナリーを使い、それをQEMUエミュレーター上で"
+"実行することができます。この方法はアプリケーションソフトウェアを開発する場合に"
+"便利でしょう。"
 
 #. type: Content of: <article><section><section><mediaobject>
 #: yocto-project-qs.xml:500
@@ -711,21 +945,23 @@ msgid ""
 "<imageobject> <imagedata fileref=\"figures/using-a-pre-built-image.png\" "
 "format=\"PNG\" align='center' scalefit='1'/> </imageobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/using-a-pre-built-image.png\" "
+"format=\"PNG\" align='center' scalefit='1'/> </imageobject>"
 
 #. type: Content of: <article><section><section><mediaobject><caption><para>
 #: yocto-project-qs.xml:504
 msgid "Using a Pre-Built Image"
-msgstr ""
+msgstr "構築済みイメージを使用する"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:509
 msgid "For this scenario, you need to do several things:"
-msgstr ""
+msgstr "この方法では、いくつかの作業が必要です："
 
 #. type: Content of: <article><section><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:513
 msgid "Install the appropriate stand-alone toolchain tarball."
-msgstr ""
+msgstr "適切なスタンドアローンのツールチェインtarボールのインストール。"
 
 #. type: Content of: <article><section><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:514
@@ -734,11 +970,14 @@ msgid ""
 "to get the QEMU image that matches your target machine’s architecture (e.g. "
 "x86, ARM, etc.)."
 msgstr ""
+"QEMUで起動するための構築済みイメージのダウンロード。使用するターゲットマシンの"
+"アーキテクチャ（例えばx86やARMなど）に合ったQEMUイメージをダウンロードする必要"
+"があります。"
 
 #. type: Content of: <article><section><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:517
 msgid "Download the filesystem image for your target machine's architecture."
-msgstr ""
+msgstr "ターゲットマシンのアーキテクチャに合ったファイルシステムイメージのダウンロード。"
 
 #. type: Content of: <article><section><section><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:519
@@ -746,11 +985,12 @@ msgid ""
 "Set up the environment to emulate the hardware and then start the QEMU "
 "emulator."
 msgstr ""
+"エミュレートするハードウェア環境の設定とQEMUエミュレーターの起動。"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:524
 msgid "Installing the Toolchain"
-msgstr ""
+msgstr "ツールチェインをインストールする"
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:526
@@ -766,6 +1006,14 @@ msgid ""
 "then is immediately followed by a string representing the target "
 "architecture."
 msgstr ""
+"構築済みツールチェイン、<filename>runqemu</filename>スクリプト、サポート"
+"ファイルを含むtarボールインストーラーを、<ulink url='&YOCTO_TOOLCHAIN_DL_"
+"URL;'></ulink>の適切なディレクトリからダウンロードできます。ツールチェインは"
+"<filename>i686</filename>ディレクトリと<filename>x86-64</filename>ディレクトリから"
+"それぞれ32ビット版と64ビット版の開発システムを利用可能です。それぞれの"
+"開発システムは五つのターゲットアーキテクチャをサポートします。tarボール"
+"インストーラースクリプトの名前は、ホストシステムを説明する文字列がファイル名の"
+"最初に付けられ、その後ターゲットアーキテクチャを意味する文字列が続きます。"
 
 #. type: Content of: <article><section><section><section><literallayout>
 #: yocto-project-qs.xml:539
@@ -783,6 +1031,17 @@ msgid ""
 "         &lt;<emphasis>release</emphasis>&gt; is the version of Yocto Project.\n"
 "            "
 msgstr ""
+"     poky-eglibc-&lt;<emphasis>host_system</emphasis>&gt;-&lt;<emphasis>arch</emphasis>&gt;-toolchain-gmae-&lt;<emphasis>release</emphasis>&gt;.sh\n"
+"\n"
+"     ここで：\n"
+"         &lt;<emphasis>host_system</emphasis>&gt;は開発システムを意味する文字列です：\n"
+"                i686もしくはx86_64\n"
+"\n"
+"         &lt;<emphasis>arch</emphasis>&gt;はターゲットアーキテクチャを意味する文字列です：\n"
+"                i586、x86_64、powerpc、mips、arm\n"
+"\n"
+"         &lt;<emphasis>release</emphasis>&gt;はYocto Projectのバージョンです。\n"
+"            "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:552
@@ -790,6 +1049,8 @@ msgid ""
 "For example, the following toolchain installer is for a 64-bit development "
 "host system and a 32-bit target architecture:"
 msgstr ""
+"例えば、次のツールチェインインストーラーは、ホストの開発システムは64ビット版で、"
+"ターゲットアーキテクチャは32ビット版です："
 
 #. type: Content of: <article><section><section><section><literallayout>
 #: yocto-project-qs.xml:557
@@ -798,6 +1059,8 @@ msgid ""
 "     poky-eglibc-x86_64-i586-toolchain-gmae-&DISTRO;.sh\n"
 "            "
 msgstr ""
+"     poky-eglibc-x86_64-i586-toolchain-gmae-&DISTRO;.sh\n"
+"            "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:561
@@ -806,6 +1069,9 @@ msgid ""
 "opt/poky</filename>.  However, when you run the toolchain installer, you can "
 "choose an installation directory."
 msgstr ""
+"ツールチェインは自己完結型で、標準では<filename>/opt/poky</filename>に"
+"インストールされます。ただし、ツールチェインインストーラーを実行時に"
+"インストールディレクトリを指定することも可能です。"
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:566
@@ -815,6 +1081,9 @@ msgid ""
 "architecture.  You must change the permissions on the toolchain installer "
 "script so that it is executable."
 msgstr ""
+"次のコマンドは、開発システムが64ビット版で、ターゲットアーキテクチャが"
+"32ビット版のツールチェインtarボールのインストーラーを実行するコマンドです。"
+"ツールチェインインストーラースクリプトに実行権限を付与する必要があります。"
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:573
@@ -825,6 +1094,10 @@ msgid ""
 "installer notifies you and exits.  Be sure you have write permissions in the "
 "directory and run the installer again.  </note>"
 msgstr ""
+"この例では、ツールチェインインストーラーは<filename>~/ダウンロード/</filename>"
+"にあると仮定しています。<note>ツールチェインをインストールするディレクトリに"
+"書き込み権限がない場合は、ツールチェインインストーラーはその通知を行い終了します。"
+"ディレクトリへの権限を確認した上で、インストーラーを再度実行してください。</note>"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:583
@@ -833,6 +1106,8 @@ msgid ""
 "     $ ~/Downloads/poky-eglibc-x86_64-i586-toolchain-gmae-&DISTRO;.sh\n"
 "                "
 msgstr ""
+"     $ ~/ダウンロード/poky-eglibc-x86_64-i586-toolchain-gmae-&DISTRO;.sh\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:588
@@ -843,11 +1118,16 @@ msgid ""
 "toolchain-from-within-the-build-tree'>Using BitBake and the Build Directory</"
 "ulink>\" sections in the Yocto Project Application Developer's Guide."
 msgstr ""
+"tarボールのインストール方法については、Yocto Projectアプリケーション開発者"
+"ガイドの\"<ulink url='&YOCTO_DOCS_ADT_URL;#using-an-existing-toolchain-"
+"tarball'>クロスツールチェインtarボールを使用する</ulink>\"セクションや、"
+"\"<ulink url='&YOCTO_DOCS_ADT_URL;#using-the-toolchain-from-within-the-build-"
+"tree'>BitBakeの使用と構築ディレクトリ</ulink>\"セクションを参照してください。"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:595
 msgid "Downloading the Pre-Built Linux Kernel"
-msgstr ""
+msgstr "構築済みLinuxカーネルをダウンロードする"
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:598
@@ -859,6 +1139,12 @@ msgid ""
 "filename>, <filename>qemumips</filename>, <filename>qemuppc</filename>, "
 "<filename>qemux86</filename>, and <filename>qemux86-64</filename>."
 msgstr ""
+"QEMUエミュレーターでも実行可能な構築済みLinuxカーネルは<ulink url='&YOCTO_"
+"QEMU_DL_URL;'></ulink>からダウンロードできます。シミュレートしたいアーキテクチャ"
+"に合ったカーネルを使用してください。Download領域は、五つのサポートされたマシン"
+"アーキテクチャが存在します：<filename>qemuarm</filename>、<filename>qemumips"
+"</filename>、<filename>qemuppc</filename>、<filename>qemux86</filename>、"
+"<filename>qemux86-64</filename>"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:609
@@ -872,6 +1158,13 @@ msgid ""
 "                x86, x86-64, ppc, mips, or arm.\n"
 "                "
 msgstr ""
+"     *zImage-qemu&lt;<emphasis>arch</emphasis>&gt;.bin\n"
+"     vmlinux-qemu&lt;<emphasis>arch</emphasis>&gt;.bin\n"
+"\n"
+"     ここで：\n"
+"         &lt;<emphasis>arch</emphasis>&gt;はターゲットアーキテクチャを意味する文字列です：\n"
+"                x86、x86_64、ppc、mips、arm\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:607
@@ -879,6 +1172,8 @@ msgid ""
 "Most kernel files have one of the following forms: <placeholder type="
 "\"literallayout\" id=\"0\"/>"
 msgstr ""
+"多くのカーネルファイルは以下のいずれかの形式になります：<placeholder type="
+"\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:619
@@ -887,11 +1182,14 @@ msgid ""
 "url='&YOCTO_DOCS_DEV_URL;#local-kernel-files'>Yocto Project Kernel</ulink>\" "
 "bulleted item in the Yocto Project Development Manual."
 msgstr ""
+"Yocto Projectカーネルのダウンロードについては、Yocto Project開発マニュアルの、"
+"\"<ulink url='&YOCTO_DOCS_DEV_URL;#local-kernel-files'>Yocto Projectカーネル</ulink>\""
+"で、より詳しいことを学べます。"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:626
 msgid "Downloading the Filesystem"
-msgstr ""
+msgstr "ファイルシステムをダウンロードする"
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:629
@@ -900,6 +1198,9 @@ msgid ""
 "architecture from <ulink url='&YOCTO_QEMU_DL_URL;'></ulink>.  Again, be sure "
 "to use the filesystem that matches the architecture you want to simulate."
 msgstr ""
+"ターゲットアーキテクチャごとのファイルシステムイメージは、"
+"<ulink url='&YOCTO_QEMU_DL_URL;'></ulink>からダウンロードできます。この場合も、"
+"シミュレートしたいアーキテクチャに合ったファイルシステムを使用してください。"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:643
@@ -919,6 +1220,19 @@ msgid ""
 "                x86, x86-64, ppc, mips, or arm.\n"
 "                "
 msgstr ""
+"     core-image-&lt;<emphasis>profile</emphasis>&gt;-qemu&lt;<emphasis>arch</emphasis>&gt;.ext3\n"
+"     core-image-&lt;<emphasis>profile</emphasis>&gt;-qemu&lt;<emphasis>arch</emphasis>&gt;.tar.bz2\n"
+"\n"
+"     ここで：\n"
+"         &lt;<emphasis>profile</emphasis>&gt;はファイルシステムのイメージプロファイルです：\n"
+"                   lsb、lsb-dev、lsb-sdk、lsb-qt3、minimal、minimal-dev、sato、sato-dev、sato-sdk\n"
+"                   イメージプロファイルの種類については、Yocto Projectリファレンスマニュアルの\n"
+"                   \"<ulink url='&YOCTO_DOCS_REF_URL;#ref-images'>イメージ</ulink>\"チャプター\n"
+"                   を参照してください。\n"
+"\n"
+"         &lt;<emphasis>arch</emphasis>&gt;はターゲットアーキテクチャを意味する文字列です：\n"
+"                x86、x86_64、ppc、mips、arm\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:636
@@ -930,11 +1244,16 @@ msgid ""
 "purposes with the Yocto Project.  <placeholder type=\"literallayout\" id="
 "\"0\"/>"
 msgstr ""
+"ファイルシステムイメージは二つの形式が存在します：<filename>ext3</filename>と"
+"<filename>tar</filename>です。QEMUエミュレーターを使ってイメージを起動する場合は、"
+"<filename>ext3</filename>形式を使う必要があります。<filename>tar</filename>形式は"
+"ホスト開発システム上で展開することが可能で、Yocto Projectにおいて構築時に"
+"使用されます。<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><title>
 #: yocto-project-qs.xml:660
 msgid "Setting Up the Environment and Starting the QEMU Emulator"
-msgstr ""
+msgstr "環境を設定しQEMUエミュレーターを起動する"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:666
@@ -950,6 +1269,15 @@ msgid ""
 "              Not all setup scripts include this string.\n"
 "                "
 msgstr ""
+"     $ source &YOCTO_ADTPATH_DIR;/environment-setup-&lt;<emphasis>arch</emphasis>&gt;-poky-linux-&lt;<emphasis>if</emphasis>&gt;\n"
+"\n"
+"     ここで\n"
+"         &lt;<emphasis>arch</emphasis>&gt;はターゲットアーキテクチャを意味する文字列です：\n"
+"                i586、x86_64、ppc603e、mips、armv5te\n"
+"\n"
+"         &lt;<emphasis>if</emphasis>&gt;はEmbedded Application Binary Interfaceを意味する文字列です。\n"
+"              すべての設定スクリプトがこの文字列を含んでいるわけではありません。\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:663
@@ -958,6 +1286,9 @@ msgid ""
 "environment.  The following command form sets up the emulation environment.  "
 "<placeholder type=\"literallayout\" id=\"0\"/>"
 msgstr ""
+"QEMUエミュレーターを起動する前に、エミュレーション環境を設定する必要があります。"
+"次のコマンドで、エミュレーション環境を設定できます。"
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:680
@@ -975,6 +1306,17 @@ msgid ""
 "\n"
 "                "
 msgstr ""
+"     $ runqemu &lt;<emphasis>qemuarch</emphasis>&gt; &lt;<emphasis>kernel-image</emphasis>&gt; &lt;<emphasis>filesystem-image</emphasis>&gt;\n"
+"\n"
+"     ここで：\n"
+"         &lt;<emphasis>qemuarch</emphasis>&gt;はターゲットアーキテクチャを意味する文字列です：qemux86、qemux86-64、\n"
+"                    qemuppc、qemumips、qemuarm\n"
+"\n"
+"         &lt;<emphasis>kernel-image</emphasis>&gt;はアーキテクチャ固有のカーネルイメージです。\n"
+"\n"
+"         &lt;<emphasis>filesystem-image</emphasis>&gt;は.ext3のファイルシステムイメージです。\n"
+"\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:678
@@ -982,6 +1324,8 @@ msgid ""
 "Finally, this command form invokes the QEMU emulator <placeholder type="
 "\"literallayout\" id=\"0\"/>"
 msgstr ""
+"最後に、QEMUエミュレーターを起動するために次のコマンドを実行します。<placeholder type="
+"\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><para><literallayout>
 #: yocto-project-qs.xml:700
@@ -993,6 +1337,11 @@ msgid ""
 "     core-image-sato-qemux86.ext3\n"
 "                "
 msgstr ""
+"     $ cd $HOME\n"
+"     $ source &YOCTO_ADTPATH_DIR;/environment-setup-i586-poky-linux\n"
+"     $ runqemu qemux86 bzImage-qemux86.bin \\\n"
+"     core-image-sato-qemux86.ext3\n"
+"                "
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:694
@@ -1003,6 +1352,11 @@ msgid ""
 "reside in your home directory.  The kernel and filesystem are for a 32-bit "
 "target architecture.  <placeholder type=\"literallayout\" id=\"0\"/>"
 msgstr ""
+"今回の例では、次の二つのコマンドでエミュレーション環境を設定し、QEMUを起動します。"
+"この例では、ルートファイルシステム（<filename>.ext3</filename>ファイル）と"
+"構築済みカーネルイメージファイルの両方がホームディレクトリにあると仮定しています。"
+"カーネルとファイルシステムのターゲットアーキテクチャは32ビットです。"
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><section><para>
 #: yocto-project-qs.xml:708
@@ -1015,11 +1369,17 @@ msgid ""
 "image results in QEMU launching in the same shell in command-line mode.</"
 "note>"
 msgstr ""
+"起動したQEMUの環境はファイルシステムイメージやターゲットアーキテクチャに"
+"依存します。例えばARMターゲットアーキテクチャをsourceし、minimalな"
+"QEMUイメージを起動したら、エミュレーターはコマンドラインモードで新しい"
+"シェルを起動します。しかしながら、SDKイメージを起動した場合はQEMUはGUI付きで"
+"起動します。<note>PPCイメージを起動したら、QEMUは同じシェル内でコマンドライン"
+"モードになります。</note>"
 
 #. type: Content of: <article><section><title>
 #: yocto-project-qs.xml:722
 msgid "Super User"
-msgstr ""
+msgstr "熟練ユーザー向け"
 
 #. type: Content of: <article><section><para><footnote><para>
 #: yocto-project-qs.xml:729
@@ -1029,6 +1389,10 @@ msgid ""
 "with information from one of his <ulink url='http://www.crashcourse.ca/wiki/"
 "index.php/Yocto_Project_Quick_Start'>wiki</ulink> pages."
 msgstr ""
+"この\"熟練者向け\"セクションの基礎を提供してくれた<ulink url='http://www.crashcourse."
+"ca'>CrashCourse</ulink>のRobert P. J. Dayに称賛と感謝を。この情報は彼の"
+"<ulink url='http://www.crashcourse.ca/wiki/index.php/Yocto_Project_Quick_Start'>"
+"wiki</ulink>ページの一つから構築しています。"
 
 #. type: Content of: <article><section><para>
 #: yocto-project-qs.xml:726
@@ -1038,11 +1402,14 @@ msgid ""
 "BeagleBoard xM starting from scratch.  The steps were performed on a 64-bit "
 "Ubuntu 10.04 system."
 msgstr ""
+"このセクション<placeholder type=\"footnote\" id=\"0\"/>では、Yocto Projectを"
+"使ってBeagleBoard xM用のイメージをスクラッチから構築するための最小限の"
+"説明を行います。この手順は、64ビット版のUbuntu 10.04システム上で行っています。"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:742
 msgid "Getting the Yocto Project"
-msgstr ""
+msgstr "Yocto Projectを入手する"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:745
@@ -1050,6 +1417,8 @@ msgid ""
 "Set up your <ulink url='&YOCTO_DOCS_DEV_URL;#source-directory'>Source "
 "Directory</ulink> one of two ways:"
 msgstr ""
+"次の二つのいずれかの方法で、<ulink url='&YOCTO_DOCS_DEV_URL;#source-directory'>ソース"
+"ディレクトリ</ulink>を構築します："
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para><literallayout>
 #: yocto-project-qs.xml:751
@@ -1059,6 +1428,9 @@ msgid ""
 "     $ tar xvjf &YOCTO_POKY_TARBALL;\n"
 "                    "
 msgstr ""
+"     $ wget &YOCTO_RELEASE_DL_URL;/&YOCTO_POKY_TARBALL;\n"
+"     $ tar xvjf &YOCTO_POKY_TARBALL;\n"
+"                    "
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:748
@@ -1066,6 +1438,8 @@ msgid ""
 "<emphasis>Tarball:</emphasis> Use if you want the latest stable release: "
 "<placeholder type=\"literallayout\" id=\"0\"/>"
 msgstr ""
+"<emphasis>tarボール：</emphasis>最新の安定版リリースが欲しい場合に使います："
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para><literallayout>
 #: yocto-project-qs.xml:757
@@ -1074,6 +1448,8 @@ msgid ""
 "     $ git clone git://git.yoctoproject.org/poky\n"
 "                    "
 msgstr ""
+"     $ git clone git://git.yoctoproject.org/poky\n"
+"                    "
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:754
@@ -1081,16 +1457,18 @@ msgid ""
 "<emphasis>Git Repository:</emphasis> Use if you want to work with cutting "
 "edge development content: <placeholder type=\"literallayout\" id=\"0\"/>"
 msgstr ""
+"<emphasis>Gitリポジトリ：</emphasis>最新の開発コンテンツで動作させたい場合に使います："
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:760
 msgid "The remainder of the section assumes the Git repository method."
-msgstr ""
+msgstr "このセクションではGitリポジトリの方法を使うことを仮定しています。"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:765
 msgid "Setting Up Your Host"
-msgstr ""
+msgstr "ホストを設定する"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:768
@@ -1099,11 +1477,14 @@ msgid ""
 "here, look at the \"<link linkend='packages'>The Packages</link>\" section "
 "earlier in this quick start."
 msgstr ""
+"動作させるためにはいくつかのパッケージが必要です。ここでは説明しませんので、"
+"このクイックスタートの前半にある\"<link linkend='packages'>パッケージ</link>\""
+"セクションを参照してください。"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:775
 msgid "Initializing the Build Environment"
-msgstr ""
+msgstr "構築環境を初期化する"
 
 #. type: Content of: <article><section><section><para><literallayout>
 #: yocto-project-qs.xml:784
@@ -1112,6 +1493,8 @@ msgid ""
 "     $ source poky/&OE_INIT_FILE; mybuilds\n"
 "            "
 msgstr ""
+"     $ source poky/&OE_INIT_FILE; mybuilds\n"
+"            "
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:778
@@ -1125,11 +1508,17 @@ msgid ""
 "own directory name it defaults to <filename>build</filename>, which is "
 "inside the Source Directory."
 msgstr ""
+"<ulink url='&YOCTO_DOCS_DEV_URL;#source-directory'>ソースディレクトリ</ulink>の"
+"親ディレクトリで、環境を初期化し、<ulink url='&YOCTO_DOCS_DEV_URL;#build-directory'>"
+"構築ディレクトリ</ulink>の名前を指定します：<placeholder type=\"literallayout\" id=\"0\"/>"
+"この時点で、<filename>mybuilds</filename>ディレクトリが作成され、そこが作業用の"
+"カレントディレクトリとなります。ディレクトリ名を指定しなかった場合は、"
+"ソースディレクトリの中に<filename>build</filename>が作成され、それが使われます。"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:794
 msgid "Configuring the local.conf File"
-msgstr ""
+msgstr "local.confファイルを設定する"
 
 #. type: Content of: <article><section><section><para><literallayout>
 #: yocto-project-qs.xml:803
@@ -1140,6 +1529,10 @@ msgid ""
 "     MACHINE ?= \"beagleboard\"\n"
 "            "
 msgstr ""
+"     BB_NUMBER_THREADS = \"8\"\n"
+"     PARALLEL_MAKE = \"-j 8\"\n"
+"     MACHINE ?= \"beagleboard\"\n"
+"            "
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:797
@@ -1153,6 +1546,14 @@ msgid ""
 "<ulink url='&YOCTO_DOCS_REF_URL;#var-PARALLEL_MAKE'><filename>PARALLEL_MAKE</"
 "filename></ulink> to twice your host processor's number of cores."
 msgstr ""
+"構築環境を初期化すると、構築ディレクトリの中に設定ファイルである<filename>"
+"conf/local.conf</filename>が作成されます。構築するマシンを指定し、構築時間を"
+"最適化するためには、この設定ファイルを手動で編集する必要があります。"
+"次の内容は最小限の変更箇所です：<placeholder type="
+"\"literallayout\" id=\"0\"/>簡単に説明すると、<ulink url='&YOCTO_DOCS_REF_URL;"
+"#var-BB_NUMBER_THREADS'><filename>BB_NUMBER_THREADS</filename></ulink>と"
+"<ulink url='&YOCTO_DOCS_REF_URL;#var-PARALLEL_MAKE'><filename>PARALLEL_MAKE</"
+"filename></ulink>はホストプロセッサーのコアの数の二倍を指定します。"
 
 #. type: Content of: <article><section><section><para><literallayout>
 #: yocto-project-qs.xml:825
@@ -1164,6 +1565,11 @@ msgid ""
 "     # BB_NO_NETWORK = \"1\"\n"
 "            "
 msgstr ""
+"     SOURCE_MIRROR_URL ?= \"file:///home/you/your-download-dir/\"\n"
+"     INHERIT += \"own-mirrors\"\n"
+"     BB_GENERATE_MIRROR_TARBALLS = \"1\"\n"
+"     # BB_NO_NETWORK = \"1\"\n"
+"            "
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:813
@@ -1179,11 +1585,20 @@ msgid ""
 "<filename>local.conf</filename> file: <placeholder type=\"literallayout\" id="
 "\"0\"/>"
 msgstr ""
+"Yocto Projectの構築では、かなり大量のソースtarボールを単純にダウンロード"
+"します。他のビルドシステム（OpenEmbeddedやAngstrom）と一緒に作業しており、"
+"ソースtarボール用の大きなディレクトリを構築済みかもしれませんし、ひょっとすると"
+"他の誰かが構築済みで読み込み権限を持っているかもしれません。もしそうなら、"
+"設定ファイルの中で<filename>PREMIRRORS</filename>を追加することで、構築プロセスは"
+"インターネットからダウンロードする前にまずそのローカルディレクトリにtarボールが存在"
+"するかどうかを確認するので、時間を節約できます。効果的な方法は、<filename>local."
+"conf</filename>ファイルに次の内容を設定することです：<placeholder type=\"literallayout\" id="
+"\"0\"/>"
 
 #. type: Content of: <article><section><section><title>
 #: yocto-project-qs.xml:834
 msgid "Building the Image"
-msgstr ""
+msgstr "イメージを構築する"
 
 #. type: Content of: <article><section><section><para><literallayout>
 #: yocto-project-qs.xml:841
@@ -1192,6 +1607,8 @@ msgid ""
 "     $ bitbake core-image-minimal\n"
 "            "
 msgstr ""
+"     $ bitbake core-image-minimal\n"
+"            "
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:837
@@ -1201,11 +1618,15 @@ msgid ""
 "smallest and simplest image: <placeholder type=\"literallayout\" id=\"0\"/> "
 "Now you just wait for the build to finish."
 msgstr ""
+"この時点で、BeagleBoard xM用に構築するイメージを選択する必要があります。"
+"Yocto Projetを使って初めて構築する場合は、最小で一番単純なイメージを試すと"
+"良いでしょう：<placeholder type=\"literallayout\" id=\"0\"/>"
+"構築が完了するまでしばらく待ってください。"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:847
 msgid "Here are some variations on the build process that could be helpful:"
-msgstr ""
+msgstr "構築プロセスにはいくつかの便利なオプションが存在します："
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para><literallayout>
 #: yocto-project-qs.xml:851
@@ -1214,6 +1635,8 @@ msgid ""
 "     $ bitbake -c fetchall core-image-minimal\n"
 "                    "
 msgstr ""
+"     $ bitbake -c fetchall core-image-minimal\n"
+"                    "
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:849
@@ -1223,6 +1646,10 @@ msgid ""
 "all the sources for that BitBake target should you disconnect from the net "
 "and want to do the build later offline."
 msgstr ""
+"必要なソースをすべて構築することなく取得します：<placeholder "
+"type=\"literallayout\" id=\"0\"/>このオプションでは、BitBakeターゲットに"
+"いつよ運ソースをすべて取得することを保証します。これは後にネットを切断し"
+"オフラインでビルドしたいときに便利でしょう。"
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para><literallayout>
 #: yocto-project-qs.xml:860
@@ -1231,6 +1658,8 @@ msgid ""
 "     $ bitbake -k core-image-minimal\n"
 "                    "
 msgstr ""
+"     $ bitbake -k core-image-minimal\n"
+"                    "
 
 #. type: Content of: <article><section><section><para><itemizedlist><listitem><para>
 #: yocto-project-qs.xml:856
@@ -1239,6 +1668,9 @@ msgid ""
 "default, BitBake aborts the build when it encounters an error.  This command "
 "keeps a faulty build going: <placeholder type=\"literallayout\" id=\"0\"/>"
 msgstr ""
+"BitBakeがエラーに遭遇しても、構築を継続します。通常はエラーに遭遇すると、"
+"BitBakeは構築を中断します。不完全な構築を行いたい場合に便利でしょう："
+"<placeholder type=\"literallayout\" id=\"0\"/>"
 
 #. type: Content of: <article><section><section><para>
 #: yocto-project-qs.xml:866
@@ -1246,3 +1678,5 @@ msgid ""
 "Once you have your image, you can take steps to load and boot it on the "
 "target hardware."
 msgstr ""
+"一度イメージを作成したら、ターゲットハードウェア上でそれをロードし"
+"起動する手順に進めます。"
