@@ -256,7 +256,7 @@ XSL_XHTML_URI = $(XSL_BASE_URI)/xhtml/docbook.xsl
 
 all: $(ALLPREQ)
 
-pdf: genln
+pdf: l10n
 ifeq ($(DOC),yocto-project-qs)
 	@echo " "
 	@echo "ERROR: You cannot generate a yocto-project-qs PDF file."
